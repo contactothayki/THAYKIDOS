@@ -1,0 +1,15 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+	--thayki-primary: #645c9f;
+	--thayki-secondary: #eed102;
+	--thayki-light: #d7dad6;
+	--thayki-accent: #bc90ba;
+	--thayki-dark: #563256;
+}
+
+body {
+	@apply antialiased;
+}
