@@ -1,5 +1,8 @@
 import type { Metadata } from 'next';
+import { Plus_Jakarta_Sans } from 'next/font/google';
 import './globals.css';
+
+const plusJakarta = Plus_Jakarta_Sans({ subsets: ['latin'], variable: '--font-sans' });
 
 export const metadata: Metadata = {
 	title: 'Thayki - Capital de trabajo a partir de tu crédito',
@@ -13,7 +16,7 @@ export default function RootLayout({
 }) {
 	return (
 		<html lang="es">
-			<body className="min-h-screen bg-white text-gray-900">{children}</body>
+			<body className={`${plusJakarta.variable} min-h-screen bg-white text-gray-900`}>{children}</body>
 		</html>
 	);
 }

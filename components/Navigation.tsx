@@ -25,6 +25,14 @@ export default function Navigation() {
 							Inicio
 						</Link>
 						<Link
+							href="/comunidad"
+							target="_blank"
+							rel="noopener noreferrer"
+							className="text-[#563256] hover:text-[#645c9f] transition"
+						>
+							Comunidad
+						</Link>
+						<Link
 							href="#calculadora"
 							className="text-[#563256] hover:text-[#645c9f] transition"
 						>
@@ -69,6 +77,15 @@ export default function Navigation() {
 					<div className="md:hidden py-4 space-y-2">
 						<Link href="#inicio" className="block py-2 text-[#563256]" onClick={() => setIsOpen(false)}>
 							Inicio
+						</Link>
+						<Link
+							href="/comunidad"
+							target="_blank"
+							rel="noopener noreferrer"
+							className="block py-2 text-[#563256]"
+							onClick={() => setIsOpen(false)}
+						>
+							Comunidad
 						</Link>
 						<Link href="#calculadora" className="block py-2 text-[#563256]" onClick={() => setIsOpen(false)}>
 							Calculadora

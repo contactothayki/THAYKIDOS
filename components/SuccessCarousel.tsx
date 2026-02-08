@@ -38,11 +38,12 @@ export default function SuccessCarousel() {
 				</div>
 			))}
 			<div className="absolute inset-0 flex flex-col items-center justify-center text-center px-4">
-				<h1 className="text-4xl md:text-6xl font-bold text-[#563256] text-center drop-shadow-lg">
-					Capital de trabajo a partir de tu crédito
+				<h1 className="text-4xl md:text-6xl font-extrabold tracking-tight text-[#0F172A] text-center drop-shadow-sm">
+					<span className="text-gradient-fintech">Capital</span> de trabajo a partir de tu{' '}
+					<span className="text-gradient-fintech">crédito</span>
 				</h1>
-				<p className="mt-4 text-black font-bold text-sm md:text-lg max-w-2xl">
-					Somos especialistas en capitalizar el crédito de tu tarjeta, brindándote liquidez inmediata con respaldo, discreción y total confianza para impulsar tu negocio.
+				<p className="mt-4 max-w-2xl text-base md:text-xl font-semibold text-[rgba(248,250,252,0.92)] [text-shadow:0_2px_0_rgba(0,0,0,0.55),0_12px_34px_rgba(0,0,0,0.55),0_0_22px_rgba(168,85,247,0.22)]">
+					Efectiviza tus tarjetas de crédito en dinero líquido y úsalo como capital de trabajo para fortalecer tus finanzas personales o hacer crecer tu negocio
 				</p>
 			</div>
 			<div className="absolute bottom-4 left-1/2 -translate-x-1/2 flex gap-2">

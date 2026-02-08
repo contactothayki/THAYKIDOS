@@ -32,6 +32,10 @@ export default function Chat() {
 	const [showWelcome, setShowWelcome] = useState(true);
 	const messagesEndRef = useRef<HTMLDivElement>(null);
 
+	const handleBackToMenu = () => {
+		setShowWelcome(true);
+	};
+
 	useEffect(() => {
 		messagesEndRef.current?.scrollIntoView({ behavior: 'smooth' });
 	}, [messages]);
@@ -82,7 +86,7 @@ export default function Chat() {
 						<p className="text-sm opacity-90">¿En qué podemos ayudarte?</p>
 					</div>
 					<div className="flex-1 overflow-y-auto p-4 space-y-4">
-						{messages.length === 0 && showWelcome && (
+						{showWelcome && (
 							<div className="space-y-3">
 								<div className="bg-[#d7dad6]/50 rounded-lg p-3">
 									<p className="text-sm">¡Hola! Bienvenido a Thayki. ¿En qué podemos ayudarte?</p>
@@ -115,6 +119,16 @@ export default function Chat() {
 										</div>
 									</details>
 								</div>
+							</div>
+						)}
+						{messages.length > 0 && !showWelcome && (
+							<div className="flex justify-center">
+								<button
+									onClick={handleBackToMenu}
+									className="text-sm px-3 py-2 rounded-lg bg-[#645c9f]/10 hover:bg-[#645c9f]/20 text-[#563256] transition"
+								>
+									Volver al menú
+								</button>
 							</div>
 						)}
 						{messages.map((msg, i) => (

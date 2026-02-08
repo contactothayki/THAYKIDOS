@@ -3,13 +3,100 @@
 @tailwind utilities;
 
 :root {
-	--thayki-primary: #645c9f;
-	--thayki-secondary: #eed102;
-	--thayki-light: #d7dad6;
-	--thayki-accent: #bc90ba;
-	--thayki-dark: #563256;
+	--thayki-primary: #2563eb;
+	--thayki-secondary: #38bdf8;
+	--thayki-success: #16a34a;
+	--thayki-text: #0f172a;
+	--thayki-muted: #64748b;
 }
 
 body {
 	@apply antialiased;
+}
+
+@layer utilities {
+	.text-gradient-fintech {
+		@apply bg-gradient-to-r from-[#38BDF8] to-[#2563EB] bg-clip-text text-transparent;
+	}
+
+	.text-gradient-fintech-tri {
+		@apply bg-clip-text text-transparent;
+		background-image: linear-gradient(90deg, #7DD3FC 0%, #2563EB 48%, #A855F7 100%);
+		text-shadow: 0 0 18px rgba(56, 189, 248, 0.25), 0 0 28px rgba(168, 85, 247, 0.25);
+	}
+
+	.text-gradient-fintech-neon {
+		@apply bg-clip-text text-transparent;
+		background-image: linear-gradient(90deg, #7DD3FC 0%, #38BDF8 38%, #3B82F6 100%);
+		text-shadow: 0 0 18px rgba(56, 189, 248, 0.30), 0 0 26px rgba(59, 130, 246, 0.28);
+	}
+
+	.text-stroke-white-2 {
+		-webkit-text-stroke: 1px rgba(255, 255, 255, 0.92);
+		paint-order: stroke fill;
+	}
+
+	.bg-gradient-fintech {
+		@apply bg-gradient-to-r from-[#38BDF8] to-[#2563EB];
+	}
+
+	.bg-cinematic-fintech {
+		background:
+			radial-gradient(900px 420px at 12% 8%, rgba(56, 189, 248, 0.20), transparent 62%),
+			radial-gradient(760px 380px at 90% 18%, rgba(37, 99, 235, 0.12), transparent 58%),
+			linear-gradient(180deg, rgba(248, 250, 252, 1) 0%, rgba(241, 245, 249, 1) 55%, rgba(248, 250, 252, 1) 100%);
+	}
+
+	.bg-cinematic-fintech::before {
+		content: '';
+		position: absolute;
+		inset: 0;
+		pointer-events: none;
+		background: radial-gradient(520px 260px at 18% 12%, rgba(255, 255, 255, 0.65), transparent 60%);
+	}
+
+	.bg-cinematic-fintech::after {
+		content: '';
+		position: absolute;
+		inset: 0;
+		pointer-events: none;
+		background: radial-gradient(900px 420px at 50% 0%, transparent 35%, rgba(15, 23, 42, 0.05) 100%);
+	}
+
+	.bg-watermark-money {
+		background-color: #0b2554;
+		position: relative;
+	}
+
+	.bg-watermark-money::before {
+		content: '';
+		position: absolute;
+		inset: 0;
+		pointer-events: none;
+		background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='560' height='360' viewBox='0 0 560 360'%3E%3Cg fill='none' stroke='%23FFFFFF' stroke-opacity='0.55' stroke-width='2'%3E%3Crect x='34' y='38' width='190' height='110' rx='18'/%3E%3Crect x='64' y='66' width='130' height='54' rx='14'/%3E%3Ccircle cx='424' cy='92' r='44'/%3E%3Ccircle cx='424' cy='92' r='24'/%3E%3Crect x='312' y='190' width='214' height='120' rx='22'/%3E%3Crect x='344' y='220' width='150' height='60' rx='14'/%3E%3Ccircle cx='130' cy='262' r='46'/%3E%3Ccircle cx='130' cy='262' r='26'/%3E%3C/g%3E%3C/svg%3E");
+		background-repeat: repeat;
+		background-size: 520px auto;
+		opacity: 0.05;
+		filter: blur(1.5px) saturate(0.2);
+		mix-blend-mode: soft-light;
+	}
+
+	.focus-ring-fintech {
+		@apply focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#38BDF8] focus-visible:ring-offset-2 focus-visible:ring-offset-white;
+	}
+
+	.btn-gradient-fintech {
+		@apply inline-flex items-center justify-center rounded-xl px-6 py-3 font-semibold text-white;
+		@apply bg-gradient-to-r from-[#38BDF8] to-[#2563EB];
+		@apply shadow-[0_12px_30px_-18px_rgba(37,99,235,0.65)] transition;
+		@apply hover:shadow-[0_18px_46px_-20px_rgba(37,99,235,0.75)] hover:brightness-[1.03];
+		@apply active:translate-y-px;
+		@apply disabled:opacity-50 disabled:cursor-not-allowed;
+		@apply focus-ring-fintech;
+	}
+
+	.card-fintech {
+		@apply rounded-2xl border border-slate-200 bg-white/90 shadow-[0_16px_50px_-30px_rgba(15,23,42,0.25)];
+		@apply backdrop-blur;
+	}
 }

@@ -4,17 +4,31 @@ import { useState } from 'react';
 import FormModal from './FormModal';
 
 const BANKS = ['BCP', 'BBVA', 'Scotiabank', 'Interbank', 'Banbif', 'CRM Falabella'];
-const CARD_CATEGORIES = ['Clásica', 'Oro', 'Platinum', 'Signature', 'Infinite'];
+const CARD_CATEGORIES = [
+  'Bfree',
+  'Black',
+  'Blue',
+  'Cero',
+  'Clásica',
+  'Gold',
+  'Green',
+  'Infinite',
+  'Light',
+  'Oro',
+  'Platinum',
+  'Platinum Card',
+  'Signature',
+];
 
 const IGV_RATE = 0.18;
 const COMMISSION_RATE = 0.05;
 
 export default function Calculator() {
-	const [monto, setMonto] = useState('');
-	const [banco, setBanco] = useState('');
-	const [categoria, setCategoria] = useState('');
-	const [showModal, setShowModal] = useState(false);
-	const [montoCalculado, setMontoCalculado] = useState(0);
+  const [monto, setMonto] = useState('');
+  const [banco, setBanco] = useState('');
+  const [categoria, setCategoria] = useState('');
+  const [showModal, setShowModal] = useState(false);
+  const [montoCalculado, setMontoCalculado] = useState(0);
 
 	const calcularEfectivo = () => {
 		const valor = parseFloat(monto.replace(/[^0-9.]/g, '')) || 0;
@@ -39,17 +53,20 @@ export default function Calculator() {
 	const isValid = monto && banco && categoria;
 
 	return (
-		<section id="calculadora" className="py-12 bg-white">
-			<div className="max-w-xl mx-auto px-4">
-				<h2 className="text-2xl font-bold text-center text-[#563256] mb-8">
+		<section
+			id="calculadora"
+			className="relative w-screen left-1/2 right-1/2 -ml-[50vw] -mr-[50vw] overflow-x-clip overflow-hidden bg-watermark-money"
+		>
+			<div className="relative z-10 max-w-xl mx-auto px-4 py-12">
+				<h2 className="text-2xl md:text-3xl font-extrabold tracking-tight text-center text-gradient-fintech-neon mb-6">
 					Calculadora de efectivización
 				</h2>
-				<p className="text-center text-gray-600 mb-6 text-sm">
+				<p className="text-center text-white/85 mb-8 text-sm font-medium">
 					Monto calculado: menos 5% + IGV
 				</p>
-				<form onSubmit={handleSubmit} className="space-y-4 bg-[#d7dad6]/30 p-6 rounded-xl">
+				<form onSubmit={handleSubmit} className="space-y-4 card-fintech p-6 md:p-7">
 					<div>
-						<label htmlFor="monto" className="block text-sm font-medium text-[#563256] mb-1">
+						<label htmlFor="monto" className="block text-sm font-semibold text-[#0F172A] mb-1">
 							Monto (S/)
 						</label>
 						<input
@@ -58,18 +75,18 @@ export default function Calculator() {
 							value={monto}
 							onChange={(e) => setMonto(e.target.value.replace(/[^0-9.]/g, ''))}
 							placeholder="Ej: 5000"
-							className="w-full px-4 py-3 rounded-lg border border-[#bc90ba] focus:ring-2 focus:ring-[#645c9f] focus:border-transparent outline-none"
+							className="w-full px-4 py-3 rounded-xl border border-slate-200 bg-white text-[#0F172A] placeholder:text-slate-400 shadow-sm focus-ring-fintech"
 						/>
 					</div>
 					<div>
-						<label htmlFor="banco" className="block text-sm font-medium text-[#563256] mb-1">
+						<label htmlFor="banco" className="block text-sm font-semibold text-[#0F172A] mb-1">
 							Banco de la tarjeta
 						</label>
 						<select
 							id="banco"
 							value={banco}
 							onChange={(e) => setBanco(e.target.value)}
-							className="w-full px-4 py-3 rounded-lg border border-[#bc90ba] focus:ring-2 focus:ring-[#645c9f] focus:border-transparent outline-none bg-white"
+							className="w-full px-4 py-3 rounded-xl border border-slate-200 bg-white text-[#0F172A] shadow-sm focus-ring-fintech"
 						>
 							<option value="">Seleccione el banco</option>
 							{BANKS.map((b) => (
@@ -78,14 +95,14 @@ export default function Calculator() {
 						</select>
 					</div>
 					<div>
-						<label htmlFor="categoria" className="block text-sm font-medium text-[#563256] mb-1">
+						<label htmlFor="categoria" className="block text-sm font-semibold text-[#0F172A] mb-1">
 							Categoría de la tarjeta
 						</label>
 						<select
 							id="categoria"
 							value={categoria}
 							onChange={(e) => setCategoria(e.target.value)}
-							className="w-full px-4 py-3 rounded-lg border border-[#bc90ba] focus:ring-2 focus:ring-[#645c9f] focus:border-transparent outline-none bg-white"
+							className="w-full px-4 py-3 rounded-xl border border-slate-200 bg-white text-[#0F172A] shadow-sm focus-ring-fintech"
 						>
 							<option value="">Seleccione la categoría</option>
 							{CARD_CATEGORIES.map((c) => (
@@ -96,14 +113,14 @@ export default function Calculator() {
 					<button
 						type="submit"
 						disabled={!isValid}
-						className="w-full py-4 rounded-lg font-semibold text-white bg-[#645c9f] hover:bg-[#563256] disabled:opacity-50 disabled:cursor-not-allowed transition-colors"
+						className="w-full btn-gradient-fintech"
 					>
 						OBTENER AHORA
 					</button>
 				</form>
 				{parseFloat(monto) > 0 && (
-					<p className="mt-4 text-center text-sm text-gray-600">
-						Monto a recibir: S/ {calcularEfectivo().toFixed(2)}
+					<p className="mt-6 text-center text-base md:text-lg font-extrabold tracking-wide text-[#16A34A]">
+						MONTO A RECIBIR: S/ {calcularEfectivo().toFixed(2)}
 					</p>
 				)}
 			</div>

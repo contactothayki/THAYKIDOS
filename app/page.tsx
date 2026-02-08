@@ -1,6 +1,7 @@
 import Navigation from '@/components/Navigation';
 import SuccessCarousel from '@/components/SuccessCarousel';
 import BanksCarousel from '@/components/BanksCarousel';
+import TrustBenefits from '@/components/TrustBenefits';
 import Calculator from '@/components/Calculator';
 import HowItWorks from '@/components/HowItWorks';
 import Footer from '@/components/Footer';
@@ -16,7 +17,14 @@ export default function Home() {
 					<SuccessCarousel />
 				</section>
 				<BanksCarousel />
-				<Calculator />
+				<section className="max-w-6xl mx-auto px-4 py-12">
+					<div>
+						<Calculator />
+						<div className="mt-10">
+							<TrustBenefits />
+						</div>
+					</div>
+				</section>
 				<HowItWorks />
 				<section id="preguntas" className="py-12">
 					<div className="max-w-4xl mx-auto px-4 text-center">
