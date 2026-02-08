@@ -42,10 +42,6 @@ export default function SuccessCarousel() {
 					<span className="text-gradient-fintech">Capital</span> de trabajo a partir de tu{' '}
 					<span className="text-gradient-fintech">crédito</span>
 				</h1>
-				<h1 className="text-3xl md:text-5xl font-extrabold tracking-tight text-[#0F172A]">
-					Efectiviza tus tarjetas de{' '}
-					<span className="text-gradient-fintech">crédito</span>
-				</h1>
 				<p className="mt-4 max-w-2xl text-base md:text-xl font-semibold text-black">
 					Efectiviza tus tarjetas de crédito en dinero líquido y úsalo como capital de trabajo para fortalecer tus finanzas personales o hacer crecer tu negocio
 				</p>
