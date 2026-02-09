@@ -3,11 +3,11 @@
 @tailwind utilities;
 
 :root {
-	--thayki-primary: #2563eb;
-	--thayki-secondary: #38bdf8;
-	--thayki-success: #16a34a;
-	--thayki-text: #0f172a;
-	--thayki-muted: #64748b;
+	--thayqui-primary: #2563eb;
+	--thayqui-secondary: #38bdf8;
+	--thayqui-success: #16a34a;
+	--thayqui-text: #0f172a;
+	--thayqui-muted: #64748b;
 }
 
 body {

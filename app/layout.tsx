@@ -5,7 +5,7 @@ import './globals.css';
 const plusJakarta = Plus_Jakarta_Sans({ subsets: ['latin'], variable: '--font-sans' });
 
 export const metadata: Metadata = {
-	title: 'Thayki - Capital de trabajo a partir de tu crédito',
+	title: 'Thayqui - Capital de trabajo a partir de tu crédito',
 	description: 'THAYLUS CONSULTING - Efectiviza tu tarjeta de crédito de forma rápida y segura',
 };
 

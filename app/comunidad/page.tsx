@@ -128,12 +128,12 @@ export default function ComunidadPage() {
 						<p>Ahí es donde empieza el problema.</p>
 
 						<h2 className="pt-4 text-xl md:text-2xl font-extrabold tracking-tight text-[#563256]">
-							🧠 Aquí entra Thayki
+							🧠 Aquí entra Thayqui
 							<br />
 							Aprende a usar el crédito sin que el crédito te use a ti
 						</h2>
 						<p>
-							Thayki es una comunidad de educación financiera pensada para la realidad peruana.
+							Thayqui es una comunidad de educación financiera pensada para la realidad peruana.
 							Sin discursos bancarios.
 							Sin fórmulas mágicas.
 							Sin juicios.
@@ -147,7 +147,7 @@ export default function ComunidadPage() {
 						</ul>
 
 						<h2 className="pt-4 text-xl md:text-2xl font-extrabold tracking-tight text-[#563256]">
-							¿Qué encontrarás en la comunidad Thayki?
+							¿Qué encontrarás en la comunidad Thayqui?
 						</h2>
 						<ul className="pl-0 space-y-2">
 							<li>✔ Educación financiera clara y aplicable</li>
@@ -159,14 +159,14 @@ export default function ComunidadPage() {
 
 						<div className="pt-6">
 							<p className="font-semibold">
-								👉 Únete hoy a la comunidad Thayki
+								👉 Únete hoy a la comunidad Thayqui
 							</p>
 							<p className="mt-2">
 								La información correcta cambia decisiones.
 								Las decisiones correctas cambian tu futuro financiero.
 							</p>
 							<p className="mt-4 font-semibold">
-								👉 Únete a la comunidad Thayki y empieza a tomar control de tu dinero.
+								👉 Únete a la comunidad Thayqui y empieza a tomar control de tu dinero.
 							</p>
 							<div className="mt-6">
 								<button type="button" className="btn-gradient-fintech" onClick={() => setOpen(true)}>
@@ -207,7 +207,7 @@ export default function ComunidadPage() {
 										e.preventDefault();
 										if (!canSubmit) return;
 										setSubmitted(true);
-										const text = `Hola quiero unirme a la comunidad de Thayki mi DNI es ${dni}`;
+										const text = `Hola quiero unirme a la comunidad de Thayqui mi DNI es ${dni}`;
 										const url = `https://wa.me/912970490?text=${encodeURIComponent(text)}`;
 										window.open(url, '_blank', 'noopener,noreferrer');
 									}}

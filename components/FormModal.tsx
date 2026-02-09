@@ -68,7 +68,7 @@ export default function FormModal({ isOpen, onClose, montoCalculado, banco, cate
 				<div className="p-6">
 					<div className="flex justify-between items-start mb-6">
 						<h3 className="text-xl font-bold text-[#563256]">
-							¡Bienvenido a Thayki!
+							¡Bienvenido a Thayqui!
 						</h3>
 						<button
 							onClick={onClose}

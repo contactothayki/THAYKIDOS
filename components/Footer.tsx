@@ -17,13 +17,13 @@ export default function Footer() {
 						<h3 className="text-lg font-bold mb-4">Contacto</h3>
 						<ul className="space-y-2 text-sm text-white/90">
 							<li>
-								<a href="mailto:contacto@thayki.com" className="hover:text-[#eed102] transition">
-									contacto@thayki.com
+								<a href="mailto:contacto@thayqui.com" className="hover:text-[#eed102] transition">
+									contacto@thayqui.com
 								</a>
 							</li>
 							<li>
-								<a href="mailto:soporte@thayki.com" className="hover:text-[#eed102] transition">
-									soporte@thayki.com
+								<a href="mailto:soporte@thayqui.com" className="hover:text-[#eed102] transition">
+									soporte@thayqui.com
 								</a>
 							</li>
 						</ul>

@@ -56,13 +56,13 @@ export default function PoliticasPrivacidad() {
 					<h2 className="text-xl font-semibold text-[#563256] mb-4">6. Derechos del usuario</h2>
 					<p className="text-gray-600">
 						El usuario tiene derecho a acceder, rectificar o solicitar la eliminación de sus datos
-						personales. Para ejercer estos derechos, puede contactarnos a soporte@thayki.com.
+						personales. Para ejercer estos derechos, puede contactarnos a soporte@thayqui.com.
 					</p>
 				</section>
 				<section>
 					<h2 className="text-xl font-semibold text-[#563256] mb-4">7. Contacto</h2>
 					<p className="text-gray-600">
-						Para consultas sobre privacidad: soporte@thayki.com
+						Para consultas sobre privacidad: soporte@thayqui.com
 					</p>
 				</section>
 			</main>

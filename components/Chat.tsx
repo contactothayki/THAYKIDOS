@@ -82,14 +82,14 @@ export default function Chat() {
 			{isOpen && (
 				<div className="fixed bottom-44 right-6 z-50 w-96 max-w-[calc(100vw-3rem)] h-[500px] max-h-[70vh] bg-white rounded-xl shadow-2xl border border-[#bc90ba]/30 flex flex-col">
 					<div className="p-4 bg-[#563256] text-white rounded-t-xl">
-						<h3 className="font-semibold">Chat Thayki</h3>
+						<h3 className="font-semibold">Chat Thayqui</h3>
 						<p className="text-sm opacity-90">¿En qué podemos ayudarte?</p>
 					</div>
 					<div className="flex-1 overflow-y-auto p-4 space-y-4">
 						{showWelcome && (
 							<div className="space-y-3">
 								<div className="bg-[#d7dad6]/50 rounded-lg p-3">
-									<p className="text-sm">¡Hola! Bienvenido a Thayki. ¿En qué podemos ayudarte?</p>
+									<p className="text-sm">¡Hola! Bienvenido a Thayqui. ¿En qué podemos ayudarte?</p>
 									<p className="text-sm mt-2 font-medium text-[#563256]">Escoge una pregunta:</p>
 								</div>
 								<div className="flex flex-col gap-2">

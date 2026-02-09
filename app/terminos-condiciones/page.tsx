@@ -16,7 +16,7 @@ export default function TerminosCondiciones() {
 				<section className="mb-8">
 					<h2 className="text-xl font-semibold text-[#563256] mb-4">1. Aceptación de términos</h2>
 					<p className="text-gray-600">
-						Al utilizar los servicios de THAYLUS CONSULTING (en adelante &quot;Thayki&quot;), el usuario acepta
+						Al utilizar los servicios de THAYLUS CONSULTING (en adelante &quot;Thayqui&quot;), el usuario acepta
 						plenamente los presentes términos y condiciones. Si no está de acuerdo con alguno de ellos,
 						deberá abstenerse de utilizar nuestros servicios.
 					</p>
@@ -24,7 +24,7 @@ export default function TerminosCondiciones() {
 				<section className="mb-8">
 					<h2 className="text-xl font-semibold text-[#563256] mb-4">2. Descripción del servicio</h2>
 					<p className="text-gray-600">
-						Thayki ofrece servicios de efectivización de tarjetas de crédito, permitiendo a los usuarios
+						Thayqui ofrece servicios de efectivización de tarjetas de crédito, permitiendo a los usuarios
 						obtener capital de trabajo mediante el uso de su línea de crédito disponible. El proceso se
 						realiza de manera virtual a través del aplicativo del banco emisor.
 					</p>
@@ -55,14 +55,14 @@ export default function TerminosCondiciones() {
 				<section className="mb-8">
 					<h2 className="text-xl font-semibold text-[#563256] mb-4">6. Modificaciones</h2>
 					<p className="text-gray-600">
-						Thayki se reserva el derecho de modificar estos términos en cualquier momento. Los cambios
+						Thayqui se reserva el derecho de modificar estos términos en cualquier momento. Los cambios
 						serán efectivos desde su publicación en este sitio web.
 					</p>
 				</section>
 				<section>
 					<h2 className="text-xl font-semibold text-[#563256] mb-4">7. Contacto</h2>
 					<p className="text-gray-600">
-						Para consultas: contacto@thayki.com | Soporte: soporte@thayki.com
+						Para consultas: contacto@thayqui.com | Soporte: soporte@thayqui.com
 					</p>
 				</section>
 			</main>
