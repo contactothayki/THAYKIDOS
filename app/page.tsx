@@ -28,7 +28,7 @@ export default function Home() {
 				</section>
 				<HowItWorks />
 				<FullWidthBanner
-                 imageSrc="/imagenes/banner-como-funciona.jpg"
+                 imageSrc="/imagenes/banner-como-funciona.png"
                  alt="Imagen explicativa"
                 />
 				<section id="preguntas" className="py-12">
