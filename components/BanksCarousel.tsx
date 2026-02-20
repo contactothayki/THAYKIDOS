@@ -45,8 +45,8 @@ export default function BanksCarousel() {
 												<Image
 													src={bank.logoSrc as string}
 													alt={bank.name}
-													width={160}
-													height={56}
+													width={320}
+													height={112}
 													className="max-h-10 w-auto object-contain rounded-lg"
 													onError={() => {
 													setFailedLogos((prev) => ({
