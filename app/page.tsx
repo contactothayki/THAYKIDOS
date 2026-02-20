@@ -4,6 +4,7 @@ import BanksCarousel from '@/components/BanksCarousel';
 import TrustBenefits from '@/components/TrustBenefits';
 import Calculator from '@/components/Calculator';
 import HowItWorks from '@/components/HowItWorks';
+import FullWidthBanner from '@/components/FullWidthBanner';
 import Footer from '@/components/Footer';
 import WhatsAppButton from '@/components/WhatsAppButton';
 import Chat from '@/components/Chat';
