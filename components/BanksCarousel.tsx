@@ -39,7 +39,7 @@ export default function BanksCarousel() {
 									return (
 										<div
 											key={`${dup}-${bank.name}`}
-											className="flex-shrink-0 flex items-center justify-center px-6"
+											className="flex-shrink-0 w-36 h-20 md:w-44 md:h-24 flex items-center justify-center"
 >
 										>
 											{canShowLogo ? (
