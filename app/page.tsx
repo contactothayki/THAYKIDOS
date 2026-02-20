@@ -27,6 +27,10 @@ export default function Home() {
 					</div>
 				</section>
 				<HowItWorks />
+				<FullWidthBanner
+                 imageSrc="/imagenes/banner-como-funciona.jpg"
+                 alt="Imagen explicativa"
+                />
 				<section id="preguntas" className="py-12">
 					<div className="max-w-4xl mx-auto px-4 text-center">
 						<h2 className="text-2xl font-bold text-[#563256] mb-4">
