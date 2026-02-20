@@ -39,7 +39,7 @@ export default function BanksCarousel() {
 									return (
 										<div
 											key={`${dup}-${bank.name}`}
-											className="flex-shrink-0 w-36 h-20 md:w-44 md:h-24 bg-white rounded-xl shadow-md flex items-center justify-center border border-[#bc90ba]/30"
+											className="flex-shrink-0 w-40 h-24 md:w-52 md:h-28 bg-white rounded-xl shadow-md flex items-center justify-center border border-[#bc90ba]/30"
 										>
 											{canShowLogo ? (
 												<Image
@@ -47,7 +47,7 @@ export default function BanksCarousel() {
 													alt={bank.name}
 													width={320}
 													height={112}
-													className="max-h-10 w-auto object-contain rounded-lg"
+													className="h-16 md:h-20 w-auto object-contain"
 													onError={() => {
 													setFailedLogos((prev) => ({
 														...prev,
