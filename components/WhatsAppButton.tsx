@@ -1,7 +1,7 @@
 'use client';
 
 export default function WhatsAppButton() {
-	const phone = '51980527151';
+	const phone = '51944102705';
 	const text = encodeURIComponent('Hola, quiero más información sobre la efectivización de tarjeta.');
 
 	return (
