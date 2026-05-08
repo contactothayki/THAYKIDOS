@@ -50,7 +50,7 @@ export default function FormModal({ isOpen, onClose, montoCalculado, banco, cate
 			const msg = encodeURIComponent(
 				`Hola, solicito efectivización.\nMonto: S/${montoCalculado}\nBanco: ${banco}\nCategoría: ${categoria}\n\nDatos:\n- ${form.nombres} ${form.apellidos}\n- ${form.tipoDoc}: ${form.numeroDoc}\n- Cel: ${form.celular}\n- Email: ${form.email}\n- Provincia: ${form.provincia}`
 			);
-			window.open(`https://wa.me/51912970490?text=${msg}`, '_blank');
+			window.open(`https://wa.me/51924738467?text=${msg}`, '_blank');
 			setForm({ nombres: '', apellidos: '', tipoDoc: '', numeroDoc: '', celular: '', email: '', provincia: '' });
 			onClose();
 		} catch (err) {
