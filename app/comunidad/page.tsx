@@ -208,7 +208,7 @@ export default function ComunidadPage() {
 										if (!canSubmit) return;
 										setSubmitted(true);
 										const text = `Hola quiero unirme a la comunidad de Thayqui mi DNI es ${dni}`;
-										const url = `https://wa.me/912970490?text=${encodeURIComponent(text)}`;
+										const url = `https://wa.me/924738467?text=${encodeURIComponent(text)}`;
 										window.open(url, '_blank', 'noopener,noreferrer');
 									}}
 									className="mt-5 space-y-4"
